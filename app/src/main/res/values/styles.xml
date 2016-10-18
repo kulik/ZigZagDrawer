@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PhoneItemDrawer" parent="@android:style/Widget.TextView">
+
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/menu_item</item>
+        <item name="android:paddingLeft">@dimen/item_drawer_left_padding</item>
+        <item name="android:paddingBottom">@dimen/padding_big</item>
+        <item name="android:paddingTop">@dimen/padding_medium</item>
+        <item name="android:background">@drawable/menu_item_background</item>
+
+    </style>
+
+    <style name="TabletItemDrawer" parent="@android:style/Widget.TextView">
+
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/menu_item</item>
+        <item name="android:paddingLeft">@dimen/item_drawer_left_padding</item>
+        <item name="android:paddingBottom">@dimen/padding_big</item>
+        <item name="android:paddingTop">@dimen/padding_big</item>
+        <item name="android:background">@drawable/menu_item_background</item>
+
+    </style>
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+
+    </style>
+
+
+</resources>

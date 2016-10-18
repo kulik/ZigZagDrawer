@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="SideMenu">
+        <attr name="maxContentScale" format="float" />
+        <attr name="translationScale" format="float" />
+        <attr name="shadow_size" format="dimension" />
+        <attr name="shadow" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,78 @@
+<!--<?xml version="1.0" encoding="utf-8"?>--><!--<ListView--><!--android:id="@+id/drawerList"--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:clickable="true"--><!--android:focusableInTouchMode="true"--><!--android:scrollbars="vertical"--><!--android:focusable="true"--><!--android:fitsSystemWindows="true"--><!--android:layout_height="match_parent"--><!--/>--><!--&lt;!&ndash;android:background="@color/myDrawerBackground"&ndash;&gt;-->
+
+<kulik.tac.com.zigzagnavigation.InterceptRelationLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/phone_user_image_size"
+            android:layout_height="@dimen/phone_user_image_size"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:layout_marginTop="24dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="CurrentUserName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_user_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:text="DeviceName"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/padding_big"
+            android:paddingRight="@dimen/padding_big"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <ListView
+            android:id="@+id/drawer_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_logout"
+            android:layout_below="@+id/txt_user_device"
+            android:choiceMode="singleChoice"
+            android:drawSelectorOnTop="true"
+            android:overScrollMode="never"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />
+
+        <TextView
+            android:id="@+id/btn_logout"
+            style="@style/TabletItemDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_item_height"
+            android:layout_alignParentBottom="true"
+            android:text="Logout" />
+
+        <!--/>-->
+    </RelativeLayout>
+
+</kulik.tac.com.zigzagnavigation.InterceptRelationLayout>
+
+
